@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-MediumItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Thin.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraLightItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-BoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraLight.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraBoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Italic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-LightItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-BlackItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ThinItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/mr_hamiltoneg.woff2" as="font" type="font/woff2" crossorigin="true">
+    <link rel="preload" href="fonts/mr_hamiltoneg.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-SemiBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-ExtraLight.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Light.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Bold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Regular.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Medium.woff" as="font" type="font/woff" crossorigin="true">
+    <link href="index.css" rel="stylesheet" />
+    <title>О компании</title>
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+  <div class="scene">
+    <div class="shadow"></div>
+    <div class="jumper">
+      <div class="spinner">
+        <div class="scaler">
+          <div class="loader">
+            <div class="cuboid">
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="menuNav">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <a class="navbar-brand" href="./index.html">
+      <img src="assets/logo3.png" alt="" width="150" height="200" />
+    </a>
+    <!-- Триггер для offcanvas меню -->
+    <button class="navbar-toggler" type="button" id="burgerButton">
+      <input
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Переключатель навигации"
+        type="checkbox"
+        role="button"
+        class="menu-burger navbar-toggler-icon"
+        id="menuToggleBtn"
+      />
+    </button>
+
+    <!-- Боковая панель offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5> -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Ваше меню -->
+        <ul
+          id="navbarNav"
+          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+        >
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link menu-hover dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Продукция
+            </a>
+            <ul
+              class="dropdown-menu"
+              data-bs-popper="none"
+              aria-labelledby="navbarDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="./page2.html"
+                  >Стеновые и потолочные рейки</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./page3.html"
+                  >Реечные перегородки</a
+                >
+              </li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li>
+                <a class="dropdown-item" href="./page4.html">3D панели</a>
+              </li>
+              <li><a class="dropdown-item" href="./page5.html">Лестницы</a></li>
+              <li><a class="dropdown-item" href="./page6.html">Мебель</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link menu-hover dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Услуги
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="./page7.html">Фрезерная резка</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./page8.html">Кромкооблицовка</a>
+              </li>
+              <li><a class="dropdown-item" href="./page9.html">Сервис</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link menu-hover"
+              aria-current="page"
+              href="./page10.html"
+              >О компании</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="./page12.html">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="./page11.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<section class="intro-aboutCompany">
+  <div class="intro-background">
+    <div class="responsive-image"></div>
+  </div>
+  <div class="intro-right">
+    <h1>О <span>компании</span></h1>
+    <!-- <p data-animation="animate__fadeIn" class="lead animate__animated">
+      Наша компания - ваш надежный партнер с 1999 года. Мы предлагаем
+      инновационные решения и преимущества.
+    </p> -->
+  </div>
+</section>
+    <section id="company-intro" class="container my-3">
+  <p class="lead lead-anim">
+    Наша компания - ваш надежный партнер с 1999 года. Мы предлагаем
+    инновационные решения и преимущества.
+  </p>
+
+  <img
+    src="assets/company_fon.jpg"
+    class="img-fluid img-fluid-anim"
+    alt="Производство компании"
+  />
+</section>
+
+<section id="company-details" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center company-details-cards">
+      <!-- Блоки с преимуществами -->
+      <div class="col-md-4 mb-2">
+        <div class="card h-100 border-0">
+          <div class="card-body card-body-anim">
+            <h2 class="h5">Серьезный опыт</h2>
+            <p>
+              Работаем с 1999 года. Разработали уникальные методы производства и
+              сервиса.
+            </p>
+            <div class="icon-company-container">
+              <div class="icon-company icon-company-anim">
+                <?xml version="1.0" encoding="UTF-8"?>
+<svg id="OBJECT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #210000;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m5.5,12h17v1c0,.55.45,1,1,1s1-.45,1-1v-1h2c.55,0,1-.45,1-1s-.45-1-1-1H5.5c-.55,0-1,.45-1,1s.45,1,1,1Z"/>
+  <path class="cls-1" d="m31,7c0-.55-.45-1-1-1h-5.5v-2.5c0-1.38-1.12-2.5-2.5-2.5h-12c-1.38,0-2.5,1.12-2.5,2.5v2.5H2c-.55,0-1,.45-1,1v11c0,1.01.39,1.91,1,2.62v7.88c0,1.38,1.12,2.5,2.5,2.5h23c1.38,0,2.5-1.12,2.5-2.5v-7.88c.61-.7,1-1.61,1-2.62V7ZM9.5,3.5c0-.28.22-.5.5-.5h12c.28,0,.5.22.5.5v2.5h-13v-2.5Zm-6.5,4.5h26v10c0,1.1-.9,2-2,2H5c-1.1,0-2-.9-2-2v-10Zm17.5,14h2v2.5c0,.28-.22.5-.5.5h-1c-.28,0-.5-.22-.5-.5v-2.5Zm-11,0h2v2.5c0,.28-.22.5-.5.5h-1c-.28,0-.5-.22-.5-.5v-2.5Zm18,7H4.5c-.28,0-.5-.22-.5-.5v-6.64c.32.08.65.14,1,.14h2.5v2.5c0,1.38,1.12,2.5,2.5,2.5h1c1.38,0,2.5-1.12,2.5-2.5v-2.5h5v2.5c0,1.38,1.12,2.5,2.5,2.5h1c1.38,0,2.5-1.12,2.5-2.5v-2.5h2.5c.35,0,.68-.06,1-.14v6.64c0,.28-.22.5-.5.5Z"/>
+</svg>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-2">
+        <div class="card h-100 border-0">
+          <div class="card-body card-body-anim">
+            <h2 class="h5">Надежный партнер</h2>
+            <p>
+              Дорожим и ценим каждого заказчика. Выстраиваем долгосрочные
+              отношения.
+            </p>
+            <div class="icon-company-container">
+              <div class="icon-company partner icon-company-anim">
+                <?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <path stroke="#210000" stroke-width="15" fill="transparent" d="M11.12,230.1c1.73,4.93,5.29,8.89,10,11.16l48.92,23.45c2.68,1.29,5.55,1.95,8.45,1.95,2.19,0,4.38-.37,6.5-1.12,2.38-.84,4.51-2.14,6.36-3.75l19.13,18.08c-10.07,10.72-9.93,27.59.53,38.05,4.94,4.94,11.31,7.48,17.79,7.84-.8,2.44-1.32,4.99-1.32,7.64,0,6.61,2.57,12.81,7.24,17.47l3.73,3.74h0c4.66,4.66,10.87,7.24,17.48,7.24,1.9,0,3.75-.27,5.55-.69.1,6.45,2.63,12.5,7.2,17.07l3.73,3.74h0c4.66,4.66,10.87,7.24,17.48,7.24,4.65,0,9.07-1.34,12.93-3.72.83,4.88,3.07,9.56,6.83,13.32,4.66,4.68,10.87,7.24,17.47,7.24s12.81-2.58,17.48-7.24l6.17-6.17c3.86,2.43,14.29,8.29,25.56,8.29,5.23,0,10.61-1.28,15.55-4.77,8.31-5.87,13.78-15.15,16.32-20.18,10.95-1.32,26.57-8.26,28.89-27.78,11.48-2.77,27.1-11.72,29.18-32.06,5.77-1.86,15.49-6.23,22.01-15.62,5.49-7.9,7.36-17.65,5.96-28.86l13.9-10.38c1.96,1.85,4.24,3.34,6.86,4.26,2.12.75,4.32,1.12,6.5,1.12,2.89,0,5.77-.64,8.45-1.93l48.92-23.46c4.72-2.26,8.27-6.22,10-11.16,1.73-4.92,1.45-10.24-.81-14.94l-52.79-110.08c-4.66-9.73-16.35-13.84-26.1-9.2l-48.92,23.47c-4.72,2.26-8.27,6.22-10,11.16-.73,2.07-1.02,4.21-1.04,6.35h-97.34c-8.28,0-16.28,3.47-21.93,9.53l-2.63,2.82-76.49-11.32c.11-2.47-.24-4.97-1.08-7.37-1.73-4.93-5.29-8.89-10-11.16l-48.93-23.47c-9.73-4.65-21.44-.54-26.1,9.2L11.93,215.15c-2.26,4.71-2.55,10.03-.81,14.95ZM119.49,309.42c-5.98-5.99-5.98-15.74,0-21.73l11.57-11.57c5.99-5.98,15.73-5.98,21.71,0,2.9,2.91,4.5,6.76,4.5,10.86s-1.6,7.96-4.5,10.86l-.92.92-10.65,10.65c-5.99,5.98-15.73,5.98-21.71,0h0ZM146.94,346.11l-3.73-3.74c-2.4-2.4-3.73-5.59-3.73-8.99s1.32-6.59,3.73-8.99l12.85-12.86,5.2-5.2s0,0,.01-.01l7.64-7.64c4.96-4.93,13.03-4.95,17.98,0l3.74,3.74c4.96,4.96,4.96,13.03,0,17.99l-25.7,25.7c-4.81,4.8-13.18,4.8-17.98,0ZM180.91,373.47l-3.74-3.74c-2.4-2.4-3.72-5.59-3.72-8.99s1.32-6.59,3.73-8.99l16.24-16.24c4.96-4.97,13.03-4.95,17.99,0l3.73,3.73c4.95,4.96,4.95,13.03,0,17.99l-16.24,16.24c-4.81,4.8-13.19,4.8-17.98,0ZM236.13,390.31c-4.8,4.79-13.17,4.82-17.98,0-4.96-4.96-4.96-13.03,0-17.99l8.54-8.55c2.48-2.47,5.74-3.71,9-3.71s6.52,1.24,8.99,3.71c4.96,4.96,4.96,13.03,0,17.99l-8.55,8.55ZM361.57,134.49c.67-1.91,2.04-3.45,3.87-4.31l48.92-23.47c1.05-.5,2.16-.74,3.26-.74,2.82,0,5.54,1.58,6.84,4.29l52.79,110.09c.87,1.82.98,3.87.31,5.77-.67,1.91-2.04,3.45-3.86,4.31h0l-48.92,23.47c-1.83.87-3.88.98-5.78.3-1.9-.67-3.44-2.04-4.31-3.86l-52.79-110.09c-.87-1.82-.98-3.87-.31-5.77ZM251.87,148.85h100.83l49.02,102.23-15.01,11.22c-7.97-2.43-33.2-11.17-65.55-32.73-5.26-3.51-14-11.94-22.27-20.44,6.12,1.59,12.82,2.77,19.83,2.77.74,0,1.48-.01,2.23-.04,3.31-.12,5.9-2.89,5.78-6.21-.11-3.3-2.59-5.8-6.2-5.79-20.76.87-41.1-11.38-41.31-11.5-.1-.06-.21-.06-.31-.11-.34-.18-.7-.27-1.06-.38-.41-.13-.81-.26-1.23-.29-.11,0-.21-.07-.32-.08-.21,0-.42.1-.64.12-.52.04-1.01.12-1.5.29-.22.07-.4.19-.61.28-.47.23-.9.48-1.3.83-.11.09-.26.13-.37.23l-24.86,24.85c-10.7,10.71-29.39,10.71-40.11,0-6.9-6.89-7.08-17.88-.43-25.02l26.43-28.3c1.08-.61,1.94-1.5,2.48-2.65l3.34-3.58c3.39-3.62,8.19-5.71,13.16-5.71ZM197.69,180.92c-11.09,11.88-10.78,30.2.72,41.68,15.25,15.26,41.83,15.26,57.07,0l20.4-20.39c8.64,9.48,28.19,30.4,38.61,37.35,33.18,22.12,58.6,31.12,67.94,33.98.92,7.97-.31,14.75-3.95,20.04-5.56,8.08-14.97,10.97-17.96,11.71-5.87-1.43-34.03-9.22-56.81-32-2.34-2.34-6.14-2.34-8.48,0-2.34,2.34-2.34,6.14,0,8.48,21.94,21.94,47.76,31.09,58.73,34.2-2.55,17.08-18.38,20.48-22.31,21.02-5.23-1.25-33.92-8.92-57.07-32.06-2.34-2.34-6.14-2.34-8.48,0s-2.34,6.14,0,8.48c21.94,21.94,47.76,31.09,58.73,34.2-2.56,14.97-16.92,16.46-20.03,16.57-4.5-1.05-33.8-8.59-57.35-32.13-2.34-2.34-6.14-2.34-8.48,0s-2.34,6.14,0,8.48c20.59,20.58,44.59,29.91,56.55,33.55-2.35,3.97-5.92,8.97-10.56,12.26-8.89,6.29-22.01-.44-26.87-3.34,4.16-9.12,2.57-20.24-4.93-27.73-6.07-6.07-14.51-8.3-22.35-6.73.08-6.44-2.3-12.9-7.19-17.79l-3.73-3.73c-4.12-4.12-9.59-6.32-15.21-6.81,3.36-8.83,1.53-19.19-5.56-26.29l-3.74-3.74c-7.11-7.11-17.5-8.93-26.33-5.55-.53-6.2-3.04-12.27-7.78-17.01-10.66-10.66-28.02-10.66-38.68,0l-3.67,3.67-20.87-19.73,48.99-102.15,70.35,10.41-19.68,21.07ZM22.75,220.34l52.79-110.08c1.3-2.71,4.02-4.3,6.84-4.3,1.09,0,2.2.25,3.25.75l48.93,23.47c1.82.87,3.19,2.4,3.86,4.31.67,1.9.56,3.95-.31,5.78l-52.79,110.07c-.87,1.83-2.41,3.2-4.31,3.87-1.92.68-3.95.57-5.78-.32l-48.92-23.46h0c-1.82-.87-3.19-2.4-3.86-4.31-.67-1.9-.56-3.95.31-5.78Z" fill="#190000"/>
+</svg>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-2">
+        <div class="card h-100 border-0">
+          <div class="card-body card-body-anim">
+            <h2 class="h5">Собственное производство</h2>
+            <p>Цех площадью 1100 м2.</p>
+            <div class="icon-company-container">
+              <div class="icon-company production icon-company-anim">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="95" viewBox="0 0 92 95">
+  <defs>
+    <image id="image" width="70" height="70" xlink:href="data:img/png;base64,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"/>
+  </defs>
+  <image id="Слой_4" data-name="Слой 4" x="11" y="13" width="70" height="70" xlink:href="data:img/png;base64,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"/>
+  <use id="Слой_4_копия" data-name="Слой 4 копия" x="11" y="13" xlink:href="#image"/>
+  <use id="Слой_4_копия-2" data-name="Слой 4 копия" x="11" y="12" xlink:href="#image"/>
+  <use id="Слой_4_копия-3" data-name="Слой 4 копия" x="11" y="12" xlink:href="#image"/>
+  <image id="Слой_4_копия-4" data-name="Слой 4 копия" x="11" y="12" width="70" height="70" xlink:href="data:img/png;base64,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"/>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-info" class="my-4">
+  <h2 class="text-center">Приглашаем посетить <span>производство</span></h2>
+  <!-- <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <div class="list-group">
+        Контакты
+        <div class="list-group-item">
+          <h3 class="h6">Адрес:</h3>
+          <p>123456, Москва, ул. Производственная, д. 11</p>
+        </div>
+        Другие контакты
+      </div>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="mapYandex">
+      <div class="map">
+        <div style="position: relative; overflow: hidden; border-radius: 50px">
+          <a
+            href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Яндекс Карты</a
+          ><a
+            href="https://yandex.ru/maps/?from=mapframe&ll=36.404548%2C55.007313&mode=usermaps&source=mapframe&um=constructor%3A324cfc5f602595af3807db61ad04510b4036cc11917cbf8e4e2e7f902938fc70&utm_medium=mapframe&utm_source=maps&z=14"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Яндекс Карты — транспорт, навигация, поиск мест</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=36.404548%2C55.007313&mode=usermaps&source=mapframe&um=constructor%3A324cfc5f602595af3807db61ad04510b4036cc11917cbf8e4e2e7f902938fc70&utm_source=mapframe&z=14"
+            width="100%"
+            height="350"
+            data-aload
+            frameborder="0"
+            allowfullscreen=""
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+      <div>
+        <div class="locahion-text locahion-text-anim">
+          <div class="h1">Как нас найти</div>
+          <p>
+            сельское поселение Деревня Шумятино, Малоярославецкий район,
+            Калужская область
+          </p>
+          <!-- <img class="sticker" src="assets/sticker2.png" alt="" /> -->
+        </div>
+      </div>
+    </div>
+    <div class="map-dop-info">
+      <div class="map-dop-info-text map-dop-info-text-anim">
+        <div class="h1">Дилеры</div>
+        <p>
+          адрес: г. Москва, Каширское шоссе д.19 к.1 МФТК «Каширский Двор»
+          телефон:
+          <a class="phone-link" href="tel:+79109105535">8 (910) 910-55-35</a>
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/msk3.png" class="img-fluid" alt="Лицо компании" />
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Footer 2 - Bootstrap Brain Component -->
+<footer class="footer">
+  <!-- Widgets - Bootstrap Brain Component -->
+  <section class="bg-light py-4 py-md-3 py-xl-8 border-top border-light">
+    <div class="container overflow-hidden">
+      <div class="row gy-6 gy-lg-0">
+        <div
+          class="col-12 col-md-4 col-lg-3 col-xl-0 justify-content-center footer-logo"
+        >
+          <div class="widget widget-logo-footer">
+            <a href="./index.html">
+              <div class="logo-footer">
+                <img src="assets/logo3.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M53.7512 76.4147C25.0516 76.4147 8.68207 56.7395 8 24H22.376C22.8482 48.03 33.4463 58.2086 41.8411 60.3073V24H55.3782V44.7245C63.668 43.8326 72.3765 34.3885 75.3146 24H88.8514C86.5954 36.802 77.1513 46.2461 70.4355 50.1287C77.1513 53.2767 87.9076 61.5141 92 76.4147H77.0988C73.8983 66.446 65.9241 58.7333 55.3782 57.684V76.4147H53.7512Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M50.168 10C60.8239 10.004 70.8257 14.1522 78.346 21.6819C85.8676 29.2114 90.0066 39.2185 90 49.8636C89.9906 71.8252 72.1203 89.6956 50.1668 89.6956H50.1508C43.4852 89.6929 36.9338 88.0208 31.1162 84.8468L10 90.3853L15.6516 69.7437C12.1665 63.7042 10.3323 56.851 10.3349 49.8304C10.343 27.8676 28.2134 10 50.168 10V10ZM61.5376 54.7631C62.4507 55.0954 67.3433 57.5023 68.3389 58.0009C68.5313 58.0971 68.7113 58.1842 68.8784 58.265C69.5753 58.602 70.0458 58.8296 70.2462 59.1651C70.4947 59.5799 70.4947 61.5736 69.6654 63.8982C68.8359 66.2229 64.8605 68.3442 62.9478 68.63C61.2319 68.8865 59.0627 68.9928 56.6782 68.2353C55.2322 67.7767 53.3794 67.1653 51.0041 66.1392C41.6698 62.1082 35.3628 53.06 34.1747 51.3556C34.0919 51.2368 34.0341 51.1538 34.0017 51.1106L33.9981 51.1056C33.486 50.4243 29.9372 45.7022 29.9372 40.8149C29.9372 36.2325 32.1873 33.8303 33.2244 32.7232C33.2961 32.6467 33.3619 32.5763 33.4208 32.5118C34.3341 31.5149 35.412 31.2664 36.0751 31.2664C36.7385 31.2664 37.4029 31.2717 37.9826 31.301C38.0541 31.3046 38.1286 31.304 38.2056 31.3037C38.786 31.3001 39.5087 31.2957 40.2221 33.0089C40.4976 33.6707 40.9012 34.653 41.3265 35.6882C42.1818 37.7702 43.1251 40.066 43.2912 40.399C43.5397 40.8974 43.7058 41.4782 43.3736 42.1427C43.323 42.2436 43.2763 42.3387 43.2318 42.4295C42.9831 42.9364 42.7995 43.3104 42.378 43.8029C42.2125 43.9963 42.0413 44.2045 41.8703 44.4131C41.5273 44.8309 41.1842 45.2488 40.8853 45.5467C40.387 46.0425 39.8686 46.5808 40.4493 47.5777C41.0303 48.5731 43.028 51.8323 45.9867 54.472C49.1661 57.3091 51.93 58.5078 53.3318 59.1157C53.6058 59.2346 53.8279 59.3308 53.9907 59.4124C54.9849 59.9109 55.5658 59.8284 56.1465 59.1637C56.7274 58.4993 58.6347 56.2583 59.298 55.2615C59.9612 54.2646 60.6259 54.4307 61.5376 54.7631V54.7631Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Контакты</h4>
+            <address class="mb-6">
+              Малоярославецкий р-н, 125км д.Терентьево, здание №1
+            </address>
+            <p class="mb-1">
+              <a
+                class="link-secondary text-decoration-none"
+                href="tel:+7(910)910-55-35"
+                >8 (910) 910-55-35</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                class="link-secondary text-decoration-none"
+                href="mailto:woodcreative@yandex.ru"
+                >woodcreative@yandex.ru</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Продукция</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="./page2.html"
+                  class="link-secondary text-decoration-none"
+                  >Стеновые и потолочные рейки</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page3.html"
+                  class="link-secondary text-decoration-none"
+                  >Реечные перегородки</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page4.html"
+                  class="link-secondary text-decoration-none"
+                  >3D панели</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page5.html"
+                  class="link-secondary text-decoration-none"
+                  >Лестницы</a
+                >
+              </li>
+              <li class="mb-0">
+                <a
+                  href="./page6.html"
+                  class="link-secondary text-decoration-none"
+                  >Мебель</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <!-- <h4 class="widget-title mb-4">Learn More</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="./page9.html"
+                  class="link-secondary text-decoration-none"
+                  >Сервис</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page10.html"
+                  class="link-secondary text-decoration-none"
+                  >О компании</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page11.html"
+                  class="link-secondary text-decoration-none"
+                  >Контакты</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none"
+                  >Вход для менеджеров</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright - Bootstrap Brain Component -->
+  <div class="bg-light py-4 py-md-0 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-xs-12 col-md-10 order-1 order-md-0">
+          <div class="copyright text-md-start">
+            &copy; Все материалы данного сайта являются объектами авторского
+            права. Запрещается копирование, распространение (в том числе путем
+            копирования на другие сайты и ресурсы в Интернете) или любое иное
+            использование информации и объектов без указания ссылки на источник.
+          </div>
+          <!-- <div
+            class="credits text-secondary text-center text-md-start mt-2 fs-7"
+          >
+            Built by
+            <a
+              href="https://bootstrapbrain.com/"
+              class="link-secondary text-decoration-none"
+              >BootstrapBrain</a
+            >
+            with <span class="text-primary">&#9829;</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="page10.894663f9b1376ba67432.js"></script>
+  </body>
+</html>

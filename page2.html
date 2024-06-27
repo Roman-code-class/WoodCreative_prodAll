@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-MediumItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Thin.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraLightItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-BoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraLight.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraBoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Italic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-LightItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-BlackItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ThinItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/mr_hamiltoneg.woff2" as="font" type="font/woff2" crossorigin="true">
+    <link rel="preload" href="fonts/mr_hamiltoneg.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-SemiBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-ExtraLight.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Light.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Bold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Regular.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Medium.woff" as="font" type="font/woff" crossorigin="true">
+    <link href="index.css" rel="stylesheet" />
+    <title>Стеновые и потолочные рейки</title>
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+  <div class="scene">
+    <div class="shadow"></div>
+    <div class="jumper">
+      <div class="spinner">
+        <div class="scaler">
+          <div class="loader">
+            <div class="cuboid">
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="page2-header">
+  <div class="bg-page2-header"></div>
+  <!-- <img class="bg-page2-header" src="assets/header2Bg.jpg" alt="" /> -->
+  <div class="menuNav">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <a class="navbar-brand" href="./index.html">
+      <img src="assets/logo3.png" alt="" width="150" height="200" />
+    </a>
+    <!-- Триггер для offcanvas меню -->
+    <button class="navbar-toggler" type="button" id="burgerButton">
+      <input
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Переключатель навигации"
+        type="checkbox"
+        role="button"
+        class="menu-burger navbar-toggler-icon"
+        id="menuToggleBtn"
+      />
+    </button>
+
+    <!-- Боковая панель offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5> -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Ваше меню -->
+        <ul
+          id="navbarNav"
+          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+        >
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link menu-hover dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Продукция
+            </a>
+            <ul
+              class="dropdown-menu"
+              data-bs-popper="none"
+              aria-labelledby="navbarDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="./page2.html"
+                  >Стеновые и потолочные рейки</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./page3.html"
+                  >Реечные перегородки</a
+                >
+              </li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li>
+                <a class="dropdown-item" href="./page4.html">3D панели</a>
+              </li>
+              <li><a class="dropdown-item" href="./page5.html">Лестницы</a></li>
+              <li><a class="dropdown-item" href="./page6.html">Мебель</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link menu-hover dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Услуги
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="./page7.html">Фрезерная резка</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./page8.html">Кромкооблицовка</a>
+              </li>
+              <li><a class="dropdown-item" href="./page9.html">Сервис</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link menu-hover"
+              aria-current="page"
+              href="./page10.html"
+              >О компании</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="./page12.html">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="./page11.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <div class="neon-title title-page2">
+    <h1 class="title-page2-text text-uppercase ceiling">
+      <span>по</span>то<span>л</span>о<span>ч</span>ны<span>е</span>
+    </h1>
+    <h1 class="title-page2-text text-uppercase and">и</h1>
+    <h1 class="title-page2-text text-uppercase wall">
+      С<span>т</span>ен<span>ов</span>ы<span>е</span>
+    </h1>
+    <h1 class="title-page2-text text-lowercase slats">ре<span>й</span>ки</h1>
+  </div>
+</div>
+    <div class="container intro">
+  <div class="tree-svg animation-svg">
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="45"
+      height="80"
+      x="0px"
+      y="0px"
+      viewBox="0 0 45 87"
+      style="enable-background: new 0 0 45 87"
+      xml:space="preserve"
+    >
+      <style type="text/css">
+        .st0 {
+          fill: none;
+          stroke: #000000;
+          stroke-miterlimit: 10;
+        }
+      </style>
+      <g>
+        <path
+          class="st0"
+          d="M22.5,2.5c0,0-1.4,80.7,2.2,82.5c2.9,1.4,12.7-1.3,12.7-1.3"
+        />
+        <line class="st0" x1="22.2" y1="2" x2="42.8" y2="22.6" />
+        <line class="st0" x1="22.2" y1="17.1" x2="42.8" y2="37.7" />
+        <line class="st0" x1="22.2" y1="30.1" x2="42.8" y2="50.7" />
+        <line class="st0" x1="22.2" y1="29.9" x2="42.8" y2="50.5" />
+        <line class="st0" x1="22.2" y1="43.5" x2="42.8" y2="64.1" />
+        <line class="st0" x1="22.5" y1="2.4" x2="2" y2="23" />
+        <line class="st0" x1="22.5" y1="16.8" x2="2" y2="37.4" />
+        <line class="st0" x1="22.5" y1="30.4" x2="2" y2="50.9" />
+        <line class="st0" x1="22.5" y1="43.9" x2="2" y2="64.5" />
+      </g>
+    </svg>
+    <!-- Интро -->
+    <!-- иконка дерева с домом -->
+    <!-- <?xml version="1.0" encoding="UTF-8"?>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+id="Layer_1"
+data-name="Layer 1"
+viewBox="0 0 28 24 "
+width="51"
+height="51"
+>
+<path
+  d="M14.041,13.641l-5.448-4.264c-.644-.504-1.542-.504-2.185,0L.959,13.641c-.61,.477-.959,1.194-.959,1.969v8.391H15V15.609c0-.774-.35-1.492-.959-1.969Zm-.041,9.359H1v-7.391c0-.465,.21-.896,.576-1.182l5.448-4.264c.28-.219,.672-.219,.952,0l5.448,4.264c.366,.286,.576,.717,.576,1.182v7.391Zm-9-3h5v-5H5v5Zm1-4h3v3h-3v-3Zm11,7h5.302l-3.726-7h2.212l-4.206-7h2.795L15.339,1.406c-.339-.474-1.295-.528-1.708,.033l-3.509,6.595-.295-.231c-.169-.133-.347-.248-.53-.348L12.796,.886c.386-.555,1.021-.886,1.697-.886s1.311,.331,1.697,.886l4.854,9.114h-2.693l4.206,7h-2.315l3.726,7h-6.967v-1Z"
+/>
+</svg> -->
+  </div>
+  <div class="intro-text animation-intro-text h1">
+    фабрика уникальных изделий
+  </div>
+</div>
+    <div class="container-slaiderPage2">
+  <div class="slaiderPage2">
+    <div class="glide">
+      <div class="glide__track slaiderPage2-glide" data-glide-el="track">
+        <ul class="glide__slides flex-img-center">
+          <li class="glide__slide flex-img-center">
+            <img
+              class="img-slaider-portfolio-page2"
+              src="assets/st1.jpg"
+              alt=""
+            />
+          </li>
+          <li class="glide__slide flex-img-center">
+            <img
+              class="img-slaider-portfolio-page2"
+              src="assets/st2.jpg"
+              alt=""
+            />
+          </li>
+          <li class="glide__slide flex-img-center">
+            <img
+              class="img-slaider-portfolio-page2"
+              src="assets/st3.jpg"
+              alt=""
+            />
+          </li>
+          <li class="glide__slide flex-img-center">
+            <img
+              class="img-slaider-portfolio-page2"
+              src="assets/st7.jpg"
+              alt=""
+            />
+          </li>
+          <li class="glide__slide flex-img-center">
+            <img
+              class="img-slaider-portfolio-page2"
+              src="assets/st5.jpg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          >
+        </button>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button
+          class="glide__bullet slaider-portfolio-page2-button slaider-portfolio-page2-button"
+          data-glide-dir="=0"
+        >
+          <img
+            class="img-slaider-portfolio-page2-button"
+            src="assets/st1.jpg"
+            alt=""
+          />
+        </button>
+        <button
+          class="glide__bullet slaider-portfolio-page2-button"
+          data-glide-dir="=1"
+        >
+          <img
+            class="img-slaider-portfolio-page2-button"
+            src="assets/st2.jpg"
+            alt=""
+          />
+        </button>
+
+        <button
+          class="glide__bullet slaider-portfolio-page2-button"
+          data-glide-dir="=2"
+        >
+          <img
+            class="img-slaider-portfolio-page2-button"
+            src="assets/st3.jpg"
+            alt=""
+          />
+        </button>
+        <button
+          class="glide__bullet slaider-portfolio-page2-button"
+          data-glide-dir="=3"
+        >
+          <img
+            class="img-slaider-portfolio-page2-button"
+            src="assets/st7.jpg"
+            alt=""
+          />
+        </button>
+        <button
+          class="glide__bullet slaider-portfolio-page2-button"
+          data-glide-dir="=4"
+        >
+          <img
+            class="img-slaider-portfolio-page2-button"
+            src="assets/st5.jpg"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="imageMap__container-tips">
+  <div
+    id="carouselExampleSlidesOnly"
+    class="carousel slide imageMap__container-tips-carousel"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/montag-1.jpg" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/block.jpeg" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+  </div>
+  <div class="markers" tabindex="0" style="grid-column: 5/6; grid-row: 7/8">
+    <div class="marker__card marker__card-1">
+      <p class="marker__card__title">Стабильность</p>
+      <p>
+        Благодаря стабильности МДФ, баффели не рассыхаются не выгибаются и не
+        подвержены деформации.
+      </p>
+    </div>
+  </div>
+  <div class="markers" tabindex="0" style="grid-column: 9/10; grid-row: 3/4">
+    <div class="marker__card marker__card-2">
+      <p class="marker__card__title">Визуал</p>
+      <p>
+        В сочетании с натуральным шпоном изделие не отличить по прочности и
+        внешнему виду от массива дуба или других благородных пород.
+      </p>
+    </div>
+  </div>
+  <div class="markers" tabindex="0" style="grid-column: 4/5; grid-row: 2/3">
+    <div class="marker__card marker__card-3">
+      <p class="marker__card__title">Уют и комфорт</p>
+      <p>
+        Декоративные рейки для стен вносят в интерьер уют и комфорт. Баффели
+        отлично смотрятся в домах, квартирах, офисах, ресторанах и т.д.
+      </p>
+    </div>
+  </div>
+  <div class="markers" tabindex="0" style="grid-column: 7/8; grid-row: 5/6">
+    <div class="marker__card marker__card-4">
+      <p class="marker__card__title">Надежность</p>
+      <p>
+        Надежный крепеж реек на стену и квалифицированный монтаж от масетров Мы
+        разработали скрытое крепление благодаря которому крепление реек будет не
+        только надежное но при этом эстетичное.
+      </p>
+    </div>
+  </div>
+  <div class="markers" tabindex="0" style="grid-column: 3/4; grid-row: 3/4">
+    <div class="marker__card marker__card-5">
+      <p class="marker__card__title">Гибкость</p>
+      <p>
+        Изделия можно комбинировать с подсветкой, разбавлять стены в холодных
+        тонах, выбирать цвет с сочетанием других элементов декора. Ваши
+        отделочники смогут установить изделия по инструкции.
+      </p>
+    </div>
+  </div>
+
+  <div class="markers" tabindex="0" style="grid-column: 10/11; grid-row: 6/7">
+    <div class="marker__card marker__card-6">
+      <p class="marker__card__title">Монтаж</p>
+      <p>Мы готовы организовать монтажные работы, в случае необходимости.</p>
+    </div>
+  </div>
+</div>
+    <div class="colorSelection-container">
+  <div class="colorSelection-title text-center">
+    <div class="h1">Выбор</div>
+    <span>цвета</span>
+  </div>
+  <div class="container colorSelection">
+    <!-- Масло -->
+    <a class="color-link" href="./page8.html">
+      <div id="oil" class="oil">
+        <div class="oilBox">
+          <div class="imgBx">
+            <div id="oil-content" class="content">
+              <div
+                id="carouselExampleCaptions"
+                data-bs-ride="carousel"
+                class="carousel slide oilCarusel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="9"
+                    aria-label="Slide 10"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="10"
+                    aria-label="Slide 11"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="11"
+                    aria-label="Slide 12"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="12"
+                    aria-label="Slide 13"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="13"
+                    aria-label="Slide 14"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="14"
+                    aria-label="Slide 15"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="15"
+                    aria-label="Slide 16"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="16"
+                    aria-label="Slide 17"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="17"
+                    aria-label="Slide 18"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="assets/m1.jpg"
+                      class="d-block w-100 oil-m1"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M1</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M2</h5>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M3</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m4.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M4</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m5.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M5</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m6.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M6</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m7.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M7</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m8.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M8</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m9.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M9</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m10.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M10</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m11.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M11</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m12.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M12</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m13.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M13</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m14.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M14</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m15.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M15</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m16.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M16</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m17.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M17</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/m18.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M18</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Тон/лак -->
+    <a href="./page8.html" class="color-link">
+      <div id="varnish" class="varnish">
+        <div class="varnishBox">
+          <div class="imgBx">
+            <div id="varnish-content" class="content">
+              <div
+                id="carouselExampleCaptions1"
+                data-bs-ride="carousel"
+                class="carousel slide oilCarusel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="9"
+                    aria-label="Slide 10"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="10"
+                    aria-label="Slide 11"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="11"
+                    aria-label="Slide 12"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="12"
+                    aria-label="Slide 13"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="13"
+                    aria-label="Slide 14"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="14"
+                    aria-label="Slide 15"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="15"
+                    aria-label="Slide 16"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="16"
+                    aria-label="Slide 17"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions1"
+                    data-bs-slide-to="17"
+                    aria-label="Slide 18"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="assets/09.jpg"
+                      class="d-block w-100 oil-m1"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>09</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/10.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>10</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/11.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>11</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/12.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>12</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/14.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>14</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/15.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>15</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/16.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>16</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/17.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>17</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/18.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>18</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/19.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>19</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/20.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>20</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/21.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>21</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/22.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>22</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/23.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>23</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/24.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>24</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/101.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>101</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/americoreh.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Амер. орех</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/dub.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Дуб</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Следующий</span>
+            </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+    <!-- Каталог -->
+<div class="row section-row katalog-adaptive">
+  <!-- Первый -->
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+    <!-- Текст карточки1 -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade img section-col"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner section-in anim-product">
+        <div class="info-katalog-card">Стеновые и потолочные рейки</div>
+        <a class="katalog-link" href="./page2.html">
+          <div class="carousel-item active">
+            <img
+              src="assets/st1.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/st6.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/st3.jpeg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/st4.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/st5.jpeg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+        </a>
+      </div>
+      <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button> -->
+      <!-- <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button> -->
+    </div>
+
+    <div class="hover-text">
+      <h2>
+        Стеновые и потолочные <br />
+        рейки
+      </h2>
+    </div>
+  </div>
+  <!-- Второй -->
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+    <div
+      id="carouselExampleIndicators1"
+      class="carousel slide carousel-fade section-col"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner section-in anim-product">
+        <div class="info-katalog-card">Реечные перегородки</div>
+        <a class="katalog-link" href="./page3.html">
+          <div class="carousel-item active">
+            <img
+              src="assets/peregorod1.png"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/peregorod2.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/peregorod3.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/peregorod4.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+        </a>
+      </div>
+      <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators1"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators1"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button> -->
+    </div>
+    <div class="hover-text">
+      <h2>Реечные перегородки</h2>
+    </div>
+  </div>
+
+  <!-- Третий -->
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+    <div
+      id="carouselExampleIndicators2"
+      class="carousel slide carousel-fade section-col"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner section-in anim-product">
+        <div class="info-katalog-card">3D панели</div>
+        <a class="katalog-link" href="./page4.html">
+          <div class="carousel-item active">
+            <img
+              src="assets/3dpanel1.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/3dpanel2.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/3dpanel3.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/3dpanel1.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+        </a>
+      </div>
+      <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button> -->
+    </div>
+    <div class="hover-text">
+      <h2>3D панели</h2>
+    </div>
+  </div>
+
+  <!-- Четвертый -->
+  <div
+    class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation"
+  >
+    <div
+      id="carouselExampleIndicators3"
+      class="carousel slide carousel-fade section-col"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner section-in anim-product">
+        <div class="info-katalog-card">Лестницы</div>
+        <a class="katalog-link" href="./page5.html">
+          <div class="carousel-item active">
+            <img
+              src="assets/lest1.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/lest2.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/lest2.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/lest3.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+        </a>
+      </div>
+      <!-- <button
+           class="carousel-control-prev"
+           type="button"
+           data-bs-target="#carouselExampleIndicators3"
+           data-bs-slide="prev"
+         >
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Предыдущий</span>
+         </button>
+         <button
+           class="carousel-control-next"
+           type="button"
+           data-bs-target="#carouselExampleIndicators3"
+           data-bs-slide="next"
+         >
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Следующий</span>
+         </button> -->
+    </div>
+    <div class="hover-text">
+      <h2>Лестницы</h2>
+    </div>
+  </div>
+
+  <!-- Пятый -->
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+    <div
+      id="carouselExampleIndicators4"
+      class="carousel slide carousel-fade section-col"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators4"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators4"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators4"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators4"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner section-in anim-product">
+        <div class="info-katalog-card">Мебель</div>
+        <a class="katalog-link" href="./page6.html">
+          <div class="carousel-item active">
+            <img
+              src="assets/meb1.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/meb2.webp"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/meb3.jpg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/meb4.jpeg"
+              class="d-block w-100 img-responsive"
+              alt="..."
+            />
+          </div>
+        </a>
+      </div>
+      <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators4"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators4"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button> -->
+    </div>
+    <div class="hover-text">
+      <h2>Мебель</h2>
+    </div>
+  </div>
+
+  <div
+    class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation katalog-info"
+  >
+    <div class="text-center anim-product-text">
+      <div class="katalog-title h1">Нам доверяют</div>
+      <div class="katalog-text h6">
+        мы предлагаем красивый и широкий выбор восстановленных деревянных
+        настенных покрытий в различных стилях и дизайнах.
+      </div>
+    </div>
+  </div>
+
+  <!-- <div
+          class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray"
+        >
+          <img src="http://fakeimg.pl/365x365/" class="img-responsive" />
+        </div> -->
+</div>
+    <div class="form-body">
+  <div class="row">
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <h3>Есть вопросы?</h3>
+          <p>Оставьте контакты и мы перезвоним</p>
+          <form class="requires-validation" novalidate>
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="Имя"
+                required
+              />
+              <div class="valid-feedback">Готово!</div>
+              <div class="invalid-feedback">Введите корректное имя!</div>
+            </div>
+            <div class="col-md-12">
+              <input
+                data-rule-required="true"
+                data-rule-minlength="10"
+                class="phone-input"
+                id="phone"
+                type="phone"
+                id="phone"
+                name="phone"
+                data-msg="Введите номер телефона"
+                placeholder="+7(000)000-00-00"
+                required
+              />
+              <div class="valid-feedback">Готово!</div>
+              <div class="invalid-feedback">Введите корректный номер!</div>
+            </div>
+            <div class="col-md-12">
+              <textarea
+                class="form-control question-input"
+                type="text"
+                name="text"
+                placeholder="Ваш вопрос"
+                required
+              ></textarea>
+              <div class="valid-feedback">Готово!</div>
+              <div class="invalid-feedback">Вопрос не задан!</div>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label"
+                >Даю согласие на обработку личных данных
+              </label>
+              <div class="invalid-feedback">Вы не дали согласия!</div>
+            </div>
+            <div class="form-button mt-3">
+              <button
+                id="submit"
+                type="submit"
+                class="btn btn-secondary btn-send"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="img-bg-form"></div>
+</div>
+    <div class="container faq faq-animation">
+  <div class="text-center faq-title">
+    <h2 class="h2">Часто задаваемые</h2>
+    <span>вопросы</span>
+  </div>
+  <div class="accordion accordion-faq">
+    <div class="accordion-item">
+      <button id="accordion-button-1" aria-expanded="false">
+        <span class="accordion-title anim-accordion-title-faq"
+          >От чего зависит и как рассчитать стоимость?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <h6>Предварительно на сайте или индивидуальный проект</h6>
+          <p>
+            У нас есть удобный <a href="">калькулятор</a> для рассчета
+            определенного количества реек с выбранной длиной и другими
+            параметрами Также Вы можете прислать проект на Email или связаться
+            по телефону для обсуждения деталей. В течение рабочего дня наш
+            менеджер выполнит предварительный расчет и вышлет Вам коммерческое
+            предложение Мы свяжемся с Вами и вышлем рекомендации для подготовки
+            оснований к монтажу
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-2" aria-expanded="false">
+        <span class="accordion-title anim-accordion-title-faq"
+          >Сколько составит срок изготовления?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <h6>Под заказ -</h6>
+          <p>
+            зависит от объема заказа и загруженности производства, в среднем
+            7-15 дней.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-3" aria-expanded="false">
+        <span class="accordion-title anim-accordion-title-faq"
+          >Как крепятся рейки и перегородки?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content accordion-img-content">
+        <div class="content-img">
+          <div class="glassBox">
+            <div class="glassBox__imgBox">
+              <img src="assets/kleev.png" alt="" />
+              <h3 class="glassBox__title">Скрытое</h3>
+            </div>
+          </div>
+          <div class="glassBox">
+            <div class="glassBox__imgBox">
+              <img src="assets/podv.png" alt="" />
+              <h3 class="glassBox__title">Подвестное</h3>
+            </div>
+          </div>
+          <div class="glassBox">
+            <div class="glassBox__imgBox">
+              <img src="assets/skr.png" alt="" />
+              <h3 class="glassBox__title">Клеевое</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-4" aria-expanded="false">
+        <span class="accordion-title">Какая минимальная стоимость заказа?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <!-- <h6>Под заказ -</h6> -->
+          <p>Минимальная стоимость заказа - 40 000 руб.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-5" aria-expanded="false">
+        <span class="accordion-title"
+          >Сотрудничаете с дизайнерами и на каких условиях?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <h6>Да, и более того, предлагаем выгодные условия!</h6>
+          <p>
+            Работая с нами Вы получаете преимущества сотрудничества напрямую с
+            производителем
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-5" aria-expanded="false">
+        <span class="accordion-title">Как происходит доставка?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content content-delivery">
+        <div class="text-center text-white">
+          <div class="col-lg-8 mx-auto h6">
+            <h6 class="display-4 content-text-delivery">Работаем с ТК</h6>
+          </div>
+        </div>
+        <!-- End -->
+        <div class="col-lg-7 mx-auto">
+          <!-- Timeline -->
+          <ul class="timeline">
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">По Калуге и Калуж.обл</h2>
+              <!-- <span class="small text-gray"
+                ><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span
+              > -->
+              <p class="text-small mt-2 font-weight-light">
+                самовывоз со склада или доставка ТК
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">По Мск и МО</h2>
+              <p class="text-small mt-2 font-weight-light">
+                доставка партнерской ТК (стоимость рассчитывается индивидуально)
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">В регионы РФ и по СНГ</h2>
+              <p class="text-small mt-2 font-weight-light">доставка ТК</p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <span class="small text-gray dop-info"
+                ><i class="fa fa-clock-o mr-1"></i>* Продукция имеет надежную
+                упаковку из картона.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-5" aria-expanded="false">
+        <span class="accordion-title"
+          >Кто может установить реечные изделия?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content content-delivery">
+        <div class="text-center text-white">
+          <div class="col-lg-8 mx-auto h6">
+            <h6 class="display-4 content-text-delivery">
+              Самостоятельно по инструкции или руками специалистов.
+            </h6>
+          </div>
+        </div>
+        <div class="col-lg-7 mx-auto">
+          <!-- Timeline -->
+          <ul class="timeline">
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <span class="small text-gray"
+                ><i class="fa fa-clock-o mr-1"></i>Вариант 1</span
+              >
+              <p class="text-small mt-2 font-weight-light">
+                самостоятельно или Ваши отделочники/мебельщики/специалисты - мы
+                предоставим инструкции по монтажу
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <span class="small text-gray"
+                ><i class="fa fa-clock-o mr-1"></i>Вариант 2</span
+              >
+              <p class="text-small mt-2 font-weight-light">
+                наши партнеры (стоимость работ с учетом расходных материалов для
+                монтажа рассчитывается индивидуально)
+              </p>
+            </li>
+          </ul>
+          <!-- End -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-container btn-centr">
+    <!-- Кнопка переключения видимости элементов -->
+    <button id="toggle-button">
+      <span id="button-text">Показать еще</span>
+      <!-- Текст кнопки в отдельный элемент -->
+      <span class="arrowLine">
+        <!-- Элемент со стрелкой -->
+        <div class="line"><svg  xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
+  <title>Down</title>
+  <path  d="M15,16a1,1,0,0,1-.707-.293l-14-14A1,1,0,0,1,1.707.293L15,13.586,28.293.293a1,1,0,0,1,1.414,1.414l-14,14A1,1,0,0,1,15,16Z" fill="#22242b"/>
+</svg>
+</div>
+      </span>
+    </button>
+  </div>
+</div>
+    <div class="row">
+  <div class="mapYandex">
+    <div class="map">
+      <div
+        class="mapMap"
+        style="position: relative; overflow: hidden; border-radius: 50px"
+      >
+        <a
+          href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+          >Яндекс Карты</a
+        ><a
+          href="https://yandex.ru/maps/?from=mapframe&ll=36.404548%2C55.007313&mode=usermaps&source=mapframe&um=constructor%3A324cfc5f602595af3807db61ad04510b4036cc11917cbf8e4e2e7f902938fc70&utm_medium=mapframe&utm_source=maps&z=14"
+          style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+          >Яндекс Карты — транспорт, навигация, поиск мест</a
+        ><iframe
+          src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=36.404548%2C55.007313&mode=usermaps&source=mapframe&um=constructor%3A324cfc5f602595af3807db61ad04510b4036cc11917cbf8e4e2e7f902938fc70&utm_source=mapframe&z=14"
+          width="100%"
+          height="100%"
+          data-aload
+          frameborder="0"
+          allowfullscreen=""
+          style="position: relative"
+        ></iframe>
+      </div>
+    </div>
+    <div class="locahion-container">
+      <div class="locahion-text">
+        <div class="h3">Как нас найти</div>
+        <p class="h6">
+          Приглашаем посетить производство:
+          <br />сельское поселение Деревня Шумятино, Малоярославецкий район,
+          Калужская область
+        </p>
+      </div>
+      <img class="sticker" src="assets/sticker2.png" alt="" />
+    </div>
+  </div>
+</div>
+    <!-- Footer 2 - Bootstrap Brain Component -->
+<footer class="footer">
+  <!-- Widgets - Bootstrap Brain Component -->
+  <section class="bg-light py-4 py-md-3 py-xl-8 border-top border-light">
+    <div class="container overflow-hidden">
+      <div class="row gy-6 gy-lg-0">
+        <div
+          class="col-12 col-md-4 col-lg-3 col-xl-0 justify-content-center footer-logo"
+        >
+          <div class="widget widget-logo-footer">
+            <a href="./index.html">
+              <div class="logo-footer">
+                <img src="assets/logo3.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M53.7512 76.4147C25.0516 76.4147 8.68207 56.7395 8 24H22.376C22.8482 48.03 33.4463 58.2086 41.8411 60.3073V24H55.3782V44.7245C63.668 43.8326 72.3765 34.3885 75.3146 24H88.8514C86.5954 36.802 77.1513 46.2461 70.4355 50.1287C77.1513 53.2767 87.9076 61.5141 92 76.4147H77.0988C73.8983 66.446 65.9241 58.7333 55.3782 57.684V76.4147H53.7512Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M50.168 10C60.8239 10.004 70.8257 14.1522 78.346 21.6819C85.8676 29.2114 90.0066 39.2185 90 49.8636C89.9906 71.8252 72.1203 89.6956 50.1668 89.6956H50.1508C43.4852 89.6929 36.9338 88.0208 31.1162 84.8468L10 90.3853L15.6516 69.7437C12.1665 63.7042 10.3323 56.851 10.3349 49.8304C10.343 27.8676 28.2134 10 50.168 10V10ZM61.5376 54.7631C62.4507 55.0954 67.3433 57.5023 68.3389 58.0009C68.5313 58.0971 68.7113 58.1842 68.8784 58.265C69.5753 58.602 70.0458 58.8296 70.2462 59.1651C70.4947 59.5799 70.4947 61.5736 69.6654 63.8982C68.8359 66.2229 64.8605 68.3442 62.9478 68.63C61.2319 68.8865 59.0627 68.9928 56.6782 68.2353C55.2322 67.7767 53.3794 67.1653 51.0041 66.1392C41.6698 62.1082 35.3628 53.06 34.1747 51.3556C34.0919 51.2368 34.0341 51.1538 34.0017 51.1106L33.9981 51.1056C33.486 50.4243 29.9372 45.7022 29.9372 40.8149C29.9372 36.2325 32.1873 33.8303 33.2244 32.7232C33.2961 32.6467 33.3619 32.5763 33.4208 32.5118C34.3341 31.5149 35.412 31.2664 36.0751 31.2664C36.7385 31.2664 37.4029 31.2717 37.9826 31.301C38.0541 31.3046 38.1286 31.304 38.2056 31.3037C38.786 31.3001 39.5087 31.2957 40.2221 33.0089C40.4976 33.6707 40.9012 34.653 41.3265 35.6882C42.1818 37.7702 43.1251 40.066 43.2912 40.399C43.5397 40.8974 43.7058 41.4782 43.3736 42.1427C43.323 42.2436 43.2763 42.3387 43.2318 42.4295C42.9831 42.9364 42.7995 43.3104 42.378 43.8029C42.2125 43.9963 42.0413 44.2045 41.8703 44.4131C41.5273 44.8309 41.1842 45.2488 40.8853 45.5467C40.387 46.0425 39.8686 46.5808 40.4493 47.5777C41.0303 48.5731 43.028 51.8323 45.9867 54.472C49.1661 57.3091 51.93 58.5078 53.3318 59.1157C53.6058 59.2346 53.8279 59.3308 53.9907 59.4124C54.9849 59.9109 55.5658 59.8284 56.1465 59.1637C56.7274 58.4993 58.6347 56.2583 59.298 55.2615C59.9612 54.2646 60.6259 54.4307 61.5376 54.7631V54.7631Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Контакты</h4>
+            <address class="mb-6">
+              Малоярославецкий р-н, 125км д.Терентьево, здание №1
+            </address>
+            <p class="mb-1">
+              <a
+                class="link-secondary text-decoration-none"
+                href="tel:+7(910)910-55-35"
+                >8 (910) 910-55-35</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                class="link-secondary text-decoration-none"
+                href="mailto:woodcreative@yandex.ru"
+                >woodcreative@yandex.ru</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Продукция</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="./page2.html"
+                  class="link-secondary text-decoration-none"
+                  >Стеновые и потолочные рейки</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page3.html"
+                  class="link-secondary text-decoration-none"
+                  >Реечные перегородки</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page4.html"
+                  class="link-secondary text-decoration-none"
+                  >3D панели</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page5.html"
+                  class="link-secondary text-decoration-none"
+                  >Лестницы</a
+                >
+              </li>
+              <li class="mb-0">
+                <a
+                  href="./page6.html"
+                  class="link-secondary text-decoration-none"
+                  >Мебель</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <!-- <h4 class="widget-title mb-4">Learn More</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="./page9.html"
+                  class="link-secondary text-decoration-none"
+                  >Сервис</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page10.html"
+                  class="link-secondary text-decoration-none"
+                  >О компании</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page11.html"
+                  class="link-secondary text-decoration-none"
+                  >Контакты</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none"
+                  >Вход для менеджеров</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright - Bootstrap Brain Component -->
+  <div class="bg-light py-4 py-md-0 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-xs-12 col-md-10 order-1 order-md-0">
+          <div class="copyright text-md-start">
+            &copy; Все материалы данного сайта являются объектами авторского
+            права. Запрещается копирование, распространение (в том числе путем
+            копирования на другие сайты и ресурсы в Интернете) или любое иное
+            использование информации и объектов без указания ссылки на источник.
+          </div>
+          <!-- <div
+            class="credits text-secondary text-center text-md-start mt-2 fs-7"
+          >
+            Built by
+            <a
+              href="https://bootstrapbrain.com/"
+              class="link-secondary text-decoration-none"
+              >BootstrapBrain</a
+            >
+            with <span class="text-primary">&#9829;</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="indexPage2and4.e40d4f4e32735153bc47.js"></script>
+  </body>
+</html>

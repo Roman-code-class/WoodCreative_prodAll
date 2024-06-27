@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-MediumItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Thin.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraLightItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-BoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraLight.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraBoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Italic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-LightItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-BlackItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Montserrat-ThinItalic.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/mr_hamiltoneg.woff2" as="font" type="font/woff2" crossorigin="true">
+    <link rel="preload" href="fonts/mr_hamiltoneg.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-SemiBold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-ExtraLight.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Light.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Bold.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Regular.woff" as="font" type="font/woff" crossorigin="true">
+    <link rel="preload" href="fonts/Oswald-Medium.woff" as="font" type="font/woff" crossorigin="true">
+    <link href="index.css" rel="stylesheet" />
+    <title>Сервис</title>
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+  <div class="scene">
+    <div class="shadow"></div>
+    <div class="jumper">
+      <div class="spinner">
+        <div class="scaler">
+          <div class="loader">
+            <div class="cuboid">
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+              <div class="cuboid__side"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="menuNav">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <a class="navbar-brand" href="./index.html">
+      <img src="assets/logo3.png" alt="" width="150" height="200" />
+    </a>
+    <!-- Триггер для offcanvas меню -->
+    <button class="navbar-toggler" type="button" id="burgerButton">
+      <input
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Переключатель навигации"
+        type="checkbox"
+        role="button"
+        class="menu-burger navbar-toggler-icon"
+        id="menuToggleBtn"
+      />
+    </button>
+
+    <!-- Боковая панель offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5> -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Ваше меню -->
+        <ul
+          id="navbarNav"
+          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+        >
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link menu-hover dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Продукция
+            </a>
+            <ul
+              class="dropdown-menu"
+              data-bs-popper="none"
+              aria-labelledby="navbarDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="./page2.html"
+                  >Стеновые и потолочные рейки</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./page3.html"
+                  >Реечные перегородки</a
+                >
+              </li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li>
+                <a class="dropdown-item" href="./page4.html">3D панели</a>
+              </li>
+              <li><a class="dropdown-item" href="./page5.html">Лестницы</a></li>
+              <li><a class="dropdown-item" href="./page6.html">Мебель</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link menu-hover dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Услуги
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="./page7.html">Фрезерная резка</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./page8.html">Кромкооблицовка</a>
+              </li>
+              <li><a class="dropdown-item" href="./page9.html">Сервис</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link menu-hover"
+              aria-current="page"
+              href="./page10.html"
+              >О компании</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="./page12.html">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="./page11.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<section class="intro-service">
+  <div class="intro-background">
+    <div class="responsive-image"></div>
+    <!-- <img
+      src="assets/header9.png"
+      alt="Дизайн интерьера с декоративными деревянными элементами"
+      class="responsive-image"
+    /> -->
+  </div>
+  <div class="intro-content">
+    <h1>Сервис</h1>
+    <p class="intro-content-anim-text">
+      Уникальные решения для интерьера вашего дома и наших партнеров
+    </p>
+  </div>
+</section>
+    <section id="project-help" class="project-help-section">
+  <div class="container">
+    <div class="section-title h2">
+      <h2>Как мы помогаем в вашем</h2>
+      <span>проекте</span>
+    </div>
+    <ul class="project-steps">
+      <li class="step">
+        <div class="step-icon"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.v{fill:#231f20;}</style></defs><g id="a"/><g id="b"/><g id="c"/><g id="d"/><g id="e"/><g id="f"/><g id="g"/><g id="h"/><g id="i"/><g id="j"/><g id="k"/><g id="l"/><g id="m"><g><path class="v" d="M16,2.25H8c-3.17,0-5.75,2.58-5.75,5.75v8c0,3.17,2.58,5.75,5.75,5.75h8c3.17,0,5.75-2.58,5.75-5.75V8c0-3.17-2.58-5.75-5.75-5.75Zm4.25,13.75c0,2.34-1.91,4.25-4.25,4.25H8c-2.34,0-4.25-1.91-4.25-4.25V8c0-2.34,1.91-4.25,4.25-4.25h8c2.34,0,4.25,1.91,4.25,4.25v8Z"/><path class="v" d="M12,12.75c2.07,0,3.75-1.68,3.75-3.75s-1.68-3.75-3.75-3.75-3.75,1.68-3.75,3.75,1.68,3.75,3.75,3.75Zm0-6c1.24,0,2.25,1.01,2.25,2.25s-1.01,2.25-2.25,2.25-2.25-1.01-2.25-2.25,1.01-2.25,2.25-2.25Z"/><path class="v" d="M14,14.25h-4c-2.07,0-3.75,1.68-3.75,3.75,0,.41,.34,.75,.75,.75s.75-.34,.75-.75c0-1.24,1.01-2.25,2.25-2.25h4c1.24,0,2.25,1.01,2.25,2.25,0,.41,.34,.75,.75,.75s.75-.34,.75-.75c0-2.07-1.68-3.75-3.75-3.75Z"/></g></g><g id="n"/><g id="o"/><g id="p"/><g id="q"/><g id="r"/><g id="s"/><g id="t"/><g id="u"/></svg></div>
+        <h3 class="step-title">Консультация</h3>
+        <p class="step-description">
+          Мы обсудим ваши идеи и предложим оптимальные решения для вашего
+          проекта.
+        </p>
+      </li>
+      <li class="step">
+        <div class="step-icon"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.v{fill:#231f20;}</style></defs><g id="a"/><g id="b"/><g id="c"/><g id="d"/><g id="e"/><g id="f"/><g id="g"/><g id="h"/><g id="i"/><g id="j"/><g id="k"/><g id="l"/><g id="m"/><g id="n"/><g id="o"/><g id="p"/><g id="q"><path class="v" d="M20,11.75c.41,0,.75-.34,.75-.75V7c0-.96-.79-1.75-1.75-1.75h-2.33c-.35-1.66-1.78-2.93-3.51-3-.98-.04-1.96,.32-2.7,1.02-.57,.54-.96,1.23-1.12,1.98h-2.33c-.96,0-1.75,.79-1.75,1.75v3.33c-1.71,.35-3,1.86-3,3.67s1.29,3.33,3,3.67v2.33c0,.96,.79,1.75,1.75,1.75h12c.96,0,1.75-.79,1.75-1.75v-3c0-.41-.34-.75-.75-.75-1.24,0-2.25-1.01-2.25-2.25s1.01-2.25,2.25-2.25Zm-.75,5.92v2.33c0,.14-.11,.25-.25,.25H7c-.14,0-.25-.11-.25-.25v-3c0-.41-.34-.75-.75-.75-1.24,0-2.25-1.01-2.25-2.25s1.01-2.25,2.25-2.25c.41,0,.75-.34,.75-.75V7c0-.14,.11-.25,.25-.25h3c.41,0,.74-.33,.75-.74,.01-.63,.27-1.21,.73-1.65,.45-.42,1.02-.65,1.61-.62,1.17,.05,2.14,1.06,2.16,2.26,0,.41,.34,.74,.75,.74h3c.14,0,.25,.11,.25,.25v3.33c-1.71,.35-3,1.86-3,3.67s1.29,3.33,3,3.67Z"/></g><g id="r"/><g id="s"/><g id="t"/><g id="u"/></svg></div>
+        <h3 class="step-title">Дизайн</h3>
+        <p class="step-description">
+          Наши дизайнеры разработают проект, соответствующий вашим предпочтениям
+          и техническим требованиям.
+        </p>
+      </li>
+      <li class="step">
+        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.cls-1{fill:#1e0f00;}</style></defs><title>Asset 531</title><g id="Layer_2" data-name="Layer 2"><g id="_1" data-name="1"><rect class="cls-1" y="46" width="48" height="2"/><path class="cls-1" d="M35,34a7,7,0,1,1,7-7A7,7,0,0,1,35,34Zm0-12a5,5,0,1,0,5,5A5,5,0,0,0,35,22Z"/><path class="cls-1" d="M35,48a1,1,0,0,1-.62-.21C33.88,47.39,22,38,22,27a13,13,0,0,1,26,0c0,11-11.88,20.39-12.38,20.79A1,1,0,0,1,35,48Zm0-32A11,11,0,0,0,24,27c0,8.64,8.6,16.63,11,18.7,2.4-2.06,11-10,11-18.7A11,11,0,0,0,35,16Z"/><path class="cls-1" d="M19,47H17V1a1,1,0,0,1,1-1H38a1,1,0,0,1,1,1V13H37V2H19Z"/><path class="cls-1" d="M5,47H3V12a1,1,0,0,1,1-1H16v2H5Z"/><rect class="cls-1" x="7" y="41" width="8" height="2"/><rect class="cls-1" x="7" y="36" width="8" height="2"/><rect class="cls-1" x="7" y="31" width="8" height="2"/><rect class="cls-1" x="7" y="26" width="8" height="2"/><rect class="cls-1" x="7" y="21" width="8" height="2"/><rect class="cls-1" x="7" y="16" width="8" height="2"/><rect class="cls-1" x="25" y="4" width="2" height="2"/><rect class="cls-1" x="21" y="4" width="2" height="2"/><rect class="cls-1" x="29" y="4" width="2" height="2"/><rect class="cls-1" x="33" y="4" width="2" height="2"/><rect class="cls-1" x="25" y="8" width="2" height="2"/><rect class="cls-1" x="21" y="8" width="2" height="2"/><rect class="cls-1" x="29" y="8" width="2" height="2"/><rect class="cls-1" x="33" y="8" width="2" height="2"/><rect class="cls-1" x="25" y="12" width="2" height="2"/><rect class="cls-1" x="21" y="12" width="2" height="2"/><rect class="cls-1" x="21" y="16" width="2" height="2"/><rect class="cls-1" x="21" y="37" width="2" height="2"/><rect class="cls-1" x="21" y="41" width="2" height="2"/><rect class="cls-1" x="25" y="41" width="2" height="2"/></g></g></svg></div>
+        <h3 class="step-title">Производство</h3>
+        <p class="step-description">
+          На современном оборудовании мы изготовим качественные элементы из
+          дерева по индивидуальным размерам.
+        </p>
+      </li>
+      <li class="step">
+        <div class="step-icon">
+          <div class="icon-dop-margin"></div>
+          <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 36"><defs><style>.cls-1{fill:#1e0f00;}</style></defs><title>Asset 181</title><g id="Layer_2" data-name="Layer 2"><g id="_1" data-name="1"><path class="cls-1" d="M45,36H3a3,3,0,0,1-3-3V31a3,3,0,0,1,3-3H45a3,3,0,0,1,3,3v2A3,3,0,0,1,45,36ZM3,30a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H45a1,1,0,0,0,1-1V31a1,1,0,0,0-1-1Z"/><path class="cls-1" d="M28,30H20a1,1,0,0,1-1-.89l-3-28A1,1,0,0,1,17,0H31a1,1,0,0,1,1,1.11l-3,28A1,1,0,0,1,28,30Zm-7.1-2h6.2L29.89,2H18.11Z"/><path class="cls-1" d="M12,9l-1.21-1.6A21.94,21.94,0,0,1,17.12,4.1L17.75,6A19.69,19.69,0,0,0,12,9Z"/><path class="cls-1" d="M45,30H3a1,1,0,0,1-1-1V25A22,22,0,0,1,5.18,13.6l1.71,1A20,20,0,0,0,4,25v3H44V25a20,20,0,0,0-2.89-10.37l1.71-1A22,22,0,0,1,46,25v4A1,1,0,0,1,45,30Z"/><path class="cls-1" d="M36,9a19.81,19.81,0,0,0-5.76-3l.63-1.9a21.94,21.94,0,0,1,6.34,3.31Z"/><path class="cls-1" d="M38.92,23.38l-1.84-.76L41.79,11.3,37.61,7.81,35,19.22,33,18.78l3-13a1,1,0,0,1,.65-.73,1,1,0,0,1,1,.18l6,5a1,1,0,0,1,.28,1.15Z"/><path class="cls-1" d="M9.08,23.38l-5-12a1,1,0,0,1,.28-1.15l6-5a1,1,0,0,1,1-.18,1,1,0,0,1,.65.73l3,13L13,19.22,10.39,7.81,6.21,11.3l4.71,11.32Z"/></g></g></svg>        </div>
+        <h3 class="step-title">Монтаж</h3>
+        <p class="step-description">
+          Наши специалисты выполнят монтаж быстро и аккуратно, обеспечив чистоту
+          на рабочем месте.
+        </p>
+      </li>
+    </ul>
+
+    <div class="project-help-form">
+      <h3 class="form-title">Начните ваш проект с нами</h3>
+      <form
+        action="/send-project-request"
+        method="POST"
+        class="requires-validation"
+        novalidate
+      >
+        <input
+          class="form-control"
+          type="text"
+          name="name"
+          placeholder="Ваше имя"
+          required
+        />
+        <div class="valid-feedback">Готово!</div>
+        <div class="invalid-feedback">Введите корректное имя!</div>
+        <!-- <input type="text" placeholder="Ваше имя" /> -->
+
+        <input
+          type="phone"
+          data-rule-required="true"
+          data-rule-minlength="10"
+          class="phone-input"
+          data-msg="Введите номер телефона"
+          id="phone"
+          name="phone"
+          placeholder="+7 (___) ___-____"
+          required
+        />
+        <div class="invalid-feedback">Введите корректный номер!</div>
+        <textarea placeholder="Опишите ваш проект..."></textarea>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck"
+            required
+          />
+          <label class="form-check-label"
+            >Даю согласие на обработку личных данных
+          </label>
+          <div class="invalid-feedback">Вы не дали согласия!</div>
+        </div>
+        <div class="btn-center">
+          <button
+            type="submit"
+            class="btn btn-outline-secondary justify-content-center btn-news"
+          >
+            Отправить запрос
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+    <section class="workingHours" id="average-time">
+  <div class="container">
+    <div class="time-info">
+      <h2 class="animation-info-title">Среднее время работы</h2>
+      <p>
+        Наши проекты обычно занимают от <strong>3 до 7 дней</strong> для
+        достижения совершенства.
+      </p>
+    </div>
+  </div>
+</section>
+    <div class="installation">
+  <div
+    id="montage-stages-carousel"
+    class="carousel slide"
+    data-bs-interval="false"
+  >
+    <!-- Индикаторы для каждого слайда -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#montage-stages-carousel"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#montage-stages-carousel"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <!-- Добавьте дополнительные кнопки, если у вас больше слайдов -->
+    </div>
+
+    <!-- Обертка для слайдов -->
+    <div class="carousel-inner">
+      <!-- Первый слайд с тремя фотографиями -->
+      <div class="carousel-item active">
+        <div class="container d-flex justify-content-center">
+          <img src="assets/do.png" class="d-block" alt="Stage 1" />
+          <img src="assets/montaj.jpg" class="d-block" alt="Stage 2" />
+          <img src="assets/posleM.jpeg" class="d-block" alt="Stage 3" />
+        </div>
+      </div>
+
+      <!-- Второй слайд с тремя фотографиями (продолжайте добавлять слайды по мере необходимости) -->
+      <div class="carousel-item">
+        <div class="container d-flex justify-content-center">
+          <img src="assets/do.png" class="d-block" alt="Stage 4" />
+          <img src="assets/montaj.jpg" class="d-block" alt="Stage 5" />
+          <img src="assets/posleM.jpeg" class="d-block" alt="Stage 6" />
+        </div>
+      </div>
+      <!-- Добавьте дополнительные .carousel-item с тремя фотографиями, если нужно больше слайдов -->
+    </div>
+
+    <!-- Управление слайдером -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#montage-stages-carousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#montage-stages-carousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+    <div class="container faq faq-animation">
+  <div class="text-center faq-title">
+    <h2 class="h2">Часто задаваемые</h2>
+    <span>вопросы</span>
+  </div>
+  <div class="accordion accordion-faq">
+    <div class="accordion-item">
+      <button id="accordion-button-1" aria-expanded="false">
+        <span class="accordion-title anim-accordion-title-faq"
+          >От чего зависит и как рассчитать стоимость?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <h6>Предварительно на сайте или индивидуальный проект</h6>
+          <p>
+            У нас есть удобный <a href="">калькулятор</a> для рассчета
+            определенного количества реек с выбранной длиной и другими
+            параметрами Также Вы можете прислать проект на Email или связаться
+            по телефону для обсуждения деталей. В течение рабочего дня наш
+            менеджер выполнит предварительный расчет и вышлет Вам коммерческое
+            предложение Мы свяжемся с Вами и вышлем рекомендации для подготовки
+            оснований к монтажу
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-2" aria-expanded="false">
+        <span class="accordion-title anim-accordion-title-faq"
+          >Сколько составит срок изготовления?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <h6>Под заказ -</h6>
+          <p>
+            зависит от объема заказа и загруженности производства, в среднем
+            7-15 дней.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-3" aria-expanded="false">
+        <span class="accordion-title anim-accordion-title-faq"
+          >Как крепятся рейки и перегородки?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content accordion-img-content">
+        <div class="content-img">
+          <div class="glassBox">
+            <div class="glassBox__imgBox">
+              <img src="assets/kleev.png" alt="" />
+              <h3 class="glassBox__title">Скрытое</h3>
+            </div>
+          </div>
+          <div class="glassBox">
+            <div class="glassBox__imgBox">
+              <img src="assets/podv.png" alt="" />
+              <h3 class="glassBox__title">Подвестное</h3>
+            </div>
+          </div>
+          <div class="glassBox">
+            <div class="glassBox__imgBox">
+              <img src="assets/skr.png" alt="" />
+              <h3 class="glassBox__title">Клеевое</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-4" aria-expanded="false">
+        <span class="accordion-title">Какая минимальная стоимость заказа?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <!-- <h6>Под заказ -</h6> -->
+          <p>Минимальная стоимость заказа - 40 000 руб.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-5" aria-expanded="false">
+        <span class="accordion-title"
+          >Сотрудничаете с дизайнерами и на каких условиях?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <div class="content-text">
+          <h6>Да, и более того, предлагаем выгодные условия!</h6>
+          <p>
+            Работая с нами Вы получаете преимущества сотрудничества напрямую с
+            производителем
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-5" aria-expanded="false">
+        <span class="accordion-title">Как происходит доставка?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content content-delivery">
+        <div class="text-center text-white">
+          <div class="col-lg-8 mx-auto h6">
+            <h6 class="display-4 content-text-delivery">Работаем с ТК</h6>
+          </div>
+        </div>
+        <!-- End -->
+        <div class="col-lg-7 mx-auto">
+          <!-- Timeline -->
+          <ul class="timeline">
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">По Калуге и Калуж.обл</h2>
+              <!-- <span class="small text-gray"
+                ><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span
+              > -->
+              <p class="text-small mt-2 font-weight-light">
+                самовывоз со склада или доставка ТК
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">По Мск и МО</h2>
+              <p class="text-small mt-2 font-weight-light">
+                доставка партнерской ТК (стоимость рассчитывается индивидуально)
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">В регионы РФ и по СНГ</h2>
+              <p class="text-small mt-2 font-weight-light">доставка ТК</p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-3 shadow">
+              <div class="timeline-arrow"></div>
+              <span class="small text-gray dop-info"
+                ><i class="fa fa-clock-o mr-1"></i>* Продукция имеет надежную
+                упаковку из картона.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item toggle-item hidden">
+      <button id="accordion-button-5" aria-expanded="false">
+        <span class="accordion-title"
+          >Кто может установить реечные изделия?</span
+        ><span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content content-delivery">
+        <div class="text-center text-white">
+          <div class="col-lg-8 mx-auto h6">
+            <h6 class="display-4 content-text-delivery">
+              Самостоятельно по инструкции или руками специалистов.
+            </h6>
+          </div>
+        </div>
+        <div class="col-lg-7 mx-auto">
+          <!-- Timeline -->
+          <ul class="timeline">
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <span class="small text-gray"
+                ><i class="fa fa-clock-o mr-1"></i>Вариант 1</span
+              >
+              <p class="text-small mt-2 font-weight-light">
+                самостоятельно или Ваши отделочники/мебельщики/специалисты - мы
+                предоставим инструкции по монтажу
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <span class="small text-gray"
+                ><i class="fa fa-clock-o mr-1"></i>Вариант 2</span
+              >
+              <p class="text-small mt-2 font-weight-light">
+                наши партнеры (стоимость работ с учетом расходных материалов для
+                монтажа рассчитывается индивидуально)
+              </p>
+            </li>
+          </ul>
+          <!-- End -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-container btn-centr">
+    <!-- Кнопка переключения видимости элементов -->
+    <button id="toggle-button">
+      <span id="button-text">Показать еще</span>
+      <!-- Текст кнопки в отдельный элемент -->
+      <span class="arrowLine">
+        <!-- Элемент со стрелкой -->
+        <div class="line"><svg  xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
+  <title>Down</title>
+  <path  d="M15,16a1,1,0,0,1-.707-.293l-14-14A1,1,0,0,1,1.707.293L15,13.586,28.293.293a1,1,0,0,1,1.414,1.414l-14,14A1,1,0,0,1,15,16Z" fill="#22242b"/>
+</svg>
+</div>
+      </span>
+    </button>
+  </div>
+</div>
+    <!-- Footer 2 - Bootstrap Brain Component -->
+<footer class="footer">
+  <!-- Widgets - Bootstrap Brain Component -->
+  <section class="bg-light py-4 py-md-3 py-xl-8 border-top border-light">
+    <div class="container overflow-hidden">
+      <div class="row gy-6 gy-lg-0">
+        <div
+          class="col-12 col-md-4 col-lg-3 col-xl-0 justify-content-center footer-logo"
+        >
+          <div class="widget widget-logo-footer">
+            <a href="./index.html">
+              <div class="logo-footer">
+                <img src="assets/logo3.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M53.7512 76.4147C25.0516 76.4147 8.68207 56.7395 8 24H22.376C22.8482 48.03 33.4463 58.2086 41.8411 60.3073V24H55.3782V44.7245C63.668 43.8326 72.3765 34.3885 75.3146 24H88.8514C86.5954 36.802 77.1513 46.2461 70.4355 50.1287C77.1513 53.2767 87.9076 61.5141 92 76.4147H77.0988C73.8983 66.446 65.9241 58.7333 55.3782 57.684V76.4147H53.7512Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M50.168 10C60.8239 10.004 70.8257 14.1522 78.346 21.6819C85.8676 29.2114 90.0066 39.2185 90 49.8636C89.9906 71.8252 72.1203 89.6956 50.1668 89.6956H50.1508C43.4852 89.6929 36.9338 88.0208 31.1162 84.8468L10 90.3853L15.6516 69.7437C12.1665 63.7042 10.3323 56.851 10.3349 49.8304C10.343 27.8676 28.2134 10 50.168 10V10ZM61.5376 54.7631C62.4507 55.0954 67.3433 57.5023 68.3389 58.0009C68.5313 58.0971 68.7113 58.1842 68.8784 58.265C69.5753 58.602 70.0458 58.8296 70.2462 59.1651C70.4947 59.5799 70.4947 61.5736 69.6654 63.8982C68.8359 66.2229 64.8605 68.3442 62.9478 68.63C61.2319 68.8865 59.0627 68.9928 56.6782 68.2353C55.2322 67.7767 53.3794 67.1653 51.0041 66.1392C41.6698 62.1082 35.3628 53.06 34.1747 51.3556C34.0919 51.2368 34.0341 51.1538 34.0017 51.1106L33.9981 51.1056C33.486 50.4243 29.9372 45.7022 29.9372 40.8149C29.9372 36.2325 32.1873 33.8303 33.2244 32.7232C33.2961 32.6467 33.3619 32.5763 33.4208 32.5118C34.3341 31.5149 35.412 31.2664 36.0751 31.2664C36.7385 31.2664 37.4029 31.2717 37.9826 31.301C38.0541 31.3046 38.1286 31.304 38.2056 31.3037C38.786 31.3001 39.5087 31.2957 40.2221 33.0089C40.4976 33.6707 40.9012 34.653 41.3265 35.6882C42.1818 37.7702 43.1251 40.066 43.2912 40.399C43.5397 40.8974 43.7058 41.4782 43.3736 42.1427C43.323 42.2436 43.2763 42.3387 43.2318 42.4295C42.9831 42.9364 42.7995 43.3104 42.378 43.8029C42.2125 43.9963 42.0413 44.2045 41.8703 44.4131C41.5273 44.8309 41.1842 45.2488 40.8853 45.5467C40.387 46.0425 39.8686 46.5808 40.4493 47.5777C41.0303 48.5731 43.028 51.8323 45.9867 54.472C49.1661 57.3091 51.93 58.5078 53.3318 59.1157C53.6058 59.2346 53.8279 59.3308 53.9907 59.4124C54.9849 59.9109 55.5658 59.8284 56.1465 59.1637C56.7274 58.4993 58.6347 56.2583 59.298 55.2615C59.9612 54.2646 60.6259 54.4307 61.5376 54.7631V54.7631Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Контакты</h4>
+            <address class="mb-6">
+              Малоярославецкий р-н, 125км д.Терентьево, здание №1
+            </address>
+            <p class="mb-1">
+              <a
+                class="link-secondary text-decoration-none"
+                href="tel:+7(910)910-55-35"
+                >8 (910) 910-55-35</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                class="link-secondary text-decoration-none"
+                href="mailto:woodcreative@yandex.ru"
+                >woodcreative@yandex.ru</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Продукция</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="./page2.html"
+                  class="link-secondary text-decoration-none"
+                  >Стеновые и потолочные рейки</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page3.html"
+                  class="link-secondary text-decoration-none"
+                  >Реечные перегородки</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page4.html"
+                  class="link-secondary text-decoration-none"
+                  >3D панели</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page5.html"
+                  class="link-secondary text-decoration-none"
+                  >Лестницы</a
+                >
+              </li>
+              <li class="mb-0">
+                <a
+                  href="./page6.html"
+                  class="link-secondary text-decoration-none"
+                  >Мебель</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 colon">
+          <div class="widget">
+            <!-- <h4 class="widget-title mb-4">Learn More</h4> -->
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="./page9.html"
+                  class="link-secondary text-decoration-none"
+                  >Сервис</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page10.html"
+                  class="link-secondary text-decoration-none"
+                  >О компании</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./page11.html"
+                  class="link-secondary text-decoration-none"
+                  >Контакты</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none"
+                  >Вход для менеджеров</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright - Bootstrap Brain Component -->
+  <div class="bg-light py-4 py-md-0 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-xs-12 col-md-10 order-1 order-md-0">
+          <div class="copyright text-md-start">
+            &copy; Все материалы данного сайта являются объектами авторского
+            права. Запрещается копирование, распространение (в том числе путем
+            копирования на другие сайты и ресурсы в Интернете) или любое иное
+            использование информации и объектов без указания ссылки на источник.
+          </div>
+          <!-- <div
+            class="credits text-secondary text-center text-md-start mt-2 fs-7"
+          >
+            Built by
+            <a
+              href="https://bootstrapbrain.com/"
+              class="link-secondary text-decoration-none"
+              >BootstrapBrain</a
+            >
+            with <span class="text-primary">&#9829;</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="page9.9b256db98b1a251b9a90.js"></script>
+  </body>
+</html>
